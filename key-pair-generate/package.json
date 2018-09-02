@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "bip39": "^2.5.0",
+    "demux-js": "^1.0.2",
+    "eosjs-ecc": "^4.0.4"
+  },
+  "name": "eos-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}
