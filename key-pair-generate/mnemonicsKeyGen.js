@@ -2,7 +2,7 @@ const {PrivateKey} = require('./node_modules/eosjs-ecc')
 const bip39 = require('./node_modules/bip39');
 
 // 生成助记词
-async function genMnemonics() {
+function genMnemonics() {
   // 根据BIP39协议，随机生成助记词
   const mnemonics = bip39.generateMnemonic();
   console.log("mnemonics:\t", mnemonics);
@@ -10,7 +10,7 @@ async function genMnemonics() {
 }
 
 // 使用助记词恢复私钥
-async function privKeyRecover(mnemonics) {
+function privKeyRecover(mnemonics) {
   // 通过助记词提取seed
   let seed = bip39.mnemonicToSeed(mnemonics);
   // console.log(seed)
@@ -20,7 +20,7 @@ async function privKeyRecover(mnemonics) {
   console.log('Public key:\t', PrivateKey.fromString(privKey.toString()).toPublic().toString())
 }
 
-(async () => {
+(() => {
   const mnemonics = genMnemonics();
   privKeyRecover(mnemonics)
 })();
