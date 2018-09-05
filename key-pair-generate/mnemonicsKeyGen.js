@@ -1,5 +1,5 @@
-const {PrivateKey} = require('./node_modules/eosjs-ecc')
-const bip39 = require('./node_modules/bip39');
+const {PrivateKey} = require('eosjs-ecc');
+const bip39 = require('bip39');
 
 // 生成助记词
 function genMnemonics() {
