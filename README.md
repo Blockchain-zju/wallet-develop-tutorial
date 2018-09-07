@@ -3,3 +3,4 @@
 
 ## 目录说明
 - key-pair-generate: 密钥生成相关的案例
+- key-pair-usage: 密钥对使用案例
